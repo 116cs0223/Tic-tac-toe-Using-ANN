@@ -64,6 +64,7 @@ class TicTocToe(Tk):
                 writer_object = writer(f_object)
                 # Pass this file object to csv.writer()
                 # and get a writer object
+                print("file write started...")
                 for goodmove in self.good_moves:
                     
                     # Pass the list as an argument into
@@ -73,6 +74,7 @@ class TicTocToe(Tk):
                 
                     #Close the file object
                 f_object.close()
+                print("file write ended...")
         self.good_moves=[]
     def makeMoveGood(self):
         self.good_move=True
